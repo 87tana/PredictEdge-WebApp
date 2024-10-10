@@ -1,6 +1,11 @@
 # Churn_WebApp
 
-This repository contains a Churn Prediction Web Application built using Streamlit, designed to predict customer churn. The application provides a simple, user-friendly interface for inputting customer data and generating churn predictions based on a pre-trained machine learning model.
+## Objectives:
+
+- Building a web app using Streamlit
+- Deploying a Machine Learning Model using fastAPI
+- Serving model via REST API with FastAPI
+- Setting up the environment with Docker and Docker-compose
 
 ##
 
