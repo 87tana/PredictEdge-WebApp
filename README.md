@@ -6,5 +6,5 @@ This repository contains a Churn Prediction Web Application built using Streamli
 
 <div align="center">
     <img width="700" src="/images/WebAppChurn.png" alt="Material Bread logo">
-    <p style="text-align: center;">Figure 1: web churn prediction app ,Created by author.</p>   
+    <p style="text-align: center;">Figure 1: web churn prediction app</p>   
 </div>
