@@ -1,31 +1,33 @@
-version: '3.9'
+version: "3.7"
 
 services:
-  fastapi:
-    build:
-      context: ./customer_churn_app_fastapi  # Directory containing FastAPI Dockerfile
-    container_name: fastapi_service
+  frontend:
+    build: streamlit
     ports:
-      - "8000:8000"
-    volumes:
-      - ./fastapi_app:/app
-    networks:
-      - app-network
-
-  streamlit:
-    build:
-      context: ./customer_churn_app_streamlit  # Directory containing Streamlit Dockerfile
-    container_name: streamlit_service
-    ports:
-      - "8501:8501"
-    volumes:
-      - ./streamlit_app:/app
+      - 8501:8501
+    networks: 
+      app_network: 
+        aliases: 
+          - frontend.docker
     depends_on:
-      - fastapi
-    networks:
-      - app-network
+      - backend
+    volumes:
+      - ./streamlit:/app
+      - ./storage:/storage
+
+  backend:
+    build: fastapi
+    ports:
+      - 8000:8000
+    networks: 
+      app_network: 
+        aliases: 
+          - backend.docker
+    volumes:
+      - ./fastapi:/app
+      - ./storage:/storage
 
 networks:
-  app-network:
+  app_network:
     driver: bridge
 
