@@ -1,12 +1,12 @@
 # Churn_WebApp
 
-
+You can see the app in the browser using this URL: 
 http://localhost:8501
 
 ## Objectives:
 
-- Building a web app using Streamlit
-- Deploying a Machine Learning Model using fastAPI
+- Building a web app using Streamlit(Fronteend app)
+- Deploying a Machine Learning Model using fastAPI(Backend app)
 - Serving model via REST API with FastAPI
 - Setting up the environment with Docker and Docker-compose
 
@@ -18,13 +18,4 @@ http://localhost:8501
 </div>
 
 
-## Frontend app with Streamlit
 
-The web app is composed of multiple tabs/interfaces that achieve the different Machine Learning steps manually by the user, relying on the pre-built UI components (e.g for data pre-processing, for configuring the ML model parameters, training,...)
-
-You can see the app in the browser using this URL: 
-## Backend app with FASTAPI
-
-FastAPI is a python web framework which I used to implement the APIs for this web application.
-
-You could check the documentation of the APIs by visiting this link: 
