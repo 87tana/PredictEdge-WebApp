@@ -2,6 +2,8 @@
 
 You can see the app in the browser using this URL: 
 http://churn-prediction-streamlit.azurewebsites.net/
+
+
 http://localhost:8501
 
 ## Objectives:
