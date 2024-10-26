@@ -3,7 +3,8 @@ import pandas as pd
 import requests  # Import requests to interact with FastAPI backend
 
 # FastAPI backend URL (replace with the correct URL)
-FASTAPI_URL = "http://backend.docker:8000/predict/"
+#FASTAPI_URL = "http://backend.docker:8000/predict/" # use for local (docker) deployment
+FASTAPI_URL="http://churn-prediction-fastapi.azurewebsites.net/predict/" # Use for cloud deployment
 
 # Title of the app
 st.title("Customer Churn Prediction")

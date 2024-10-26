@@ -13,7 +13,6 @@ services:
       - backend
     volumes:
       - ./streamlit:/app
-      - ./storage:/storage
 
   backend:
     build: fastapi
@@ -25,7 +24,6 @@ services:
           - backend.docker
     volumes:
       - ./fastapi:/app
-      - ./storage:/storage
 
 networks:
   app_network:

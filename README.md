@@ -1,7 +1,11 @@
 # Churn_WebApp
 
 You can see the app in the browser using this URL: 
+<<<<<<< HEAD
 
+=======
+http://churn-prediction-streamlit.azurewebsites.net/
+>>>>>>> 895e696 (azure link added)
 
 ## Objectives:
 
